@@ -1,0 +1,168 @@
+
+/*Showcase*/
+.showcase{
+    background-image: url("../../../assets/img/showcase.jpg");
+    background-size: cover;
+}
+.showcase .col-10{
+    padding-top:95px;
+    padding-bottom:95px;
+}
+.w-4{
+    width:40%;
+}
+.w-6{
+    width:60%;
+}
+.w-6 h3.pri{
+    margin-top:50px;
+    margin-left:30px;
+}
+.show-img1{
+    margin-right:15px;
+}
+.show-img2{
+    margin-left:15px;
+}
+.show-content{
+    margin-top:5px;
+}
+.show-content h3{
+    margin-bottom:20px;
+}
+.show-content p {
+    margin-bottom:70px;
+}
+
+/*TOP TREND*/
+.top-trend img{
+    height:100%;
+}
+.trend-content{
+    margin-right:15px;
+    margin-top:140px;
+}
+.top-trend{
+    margin-top:120px;
+    margin-bottom:120px;
+}
+.trend-content .line{
+    margin-top:10px;
+    margin-bottom:10px;
+    width:230px;
+}
+.trend-content h4{
+    margin-bottom:30px;
+}
+.trend-first{
+    margin-left:15px;
+}
+.trend-img1{
+    overflow: hidden;
+    position:relative;
+}
+.trend-title{
+    position:absolute;
+    left:30px;
+    bottom:300px;
+}
+.trend-img1 img:hover{
+    transform: scale(110%);
+}
+.trend-img1 img{
+    transition: 0.5s all;
+}
+.trend-text{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:20px;
+}
+
+/*RECENTLY UPDATE*/
+.recently-update{
+    margin-bottom:170px;
+}
+.title{
+    margin-bottom:40px;
+}
+.title .col-8{
+    text-align:center;
+}
+.title .line{
+    width:530px;
+    margin: 10px auto 20px auto;
+}
+
+/*SPECIAL CAKE*/
+.special-content{
+    background-color:#FFf;
+    text-align: center;
+    padding:150px 15px;
+}
+.special-cake{
+    background-color:#FFA99650;
+    align-items:center;
+    height:450px;
+    margin: 0px auto;
+    display:flex;
+}
+.special-content h4{
+    margin-top:5px;
+    margin-bottom:20px;
+}
+.special-content p{
+    margin-bottom:40px;
+}
+
+/*FOR THIS SEASON*/
+.for-season{
+    margin-top:170px;
+    margin-bottom:120px;
+}
+.season-cart{
+    margin-bottom:60px;
+}
+
+/*SIGN UP FOR EMAIL*/
+.signup{
+    margin-bottom:120px;
+}
+.signup .col-5{
+    background-color:#FFA99650;
+}
+.signup .col-5 button{
+    width:100%
+}
+.signup .col-5{
+    padding-left:60px;
+    padding-right:60px;
+    padding-top:90px;
+}
+.signup .col-5 p{
+    margin-top:20px;
+    margin-bottom:40px;
+}
+/*FOLLOW US*/
+.follow{
+    background-color:#FFA99630;
+    padding-top:90px;
+    padding-bottom:90px;
+    margin-bottom:120px;
+}
+.follow2{
+    margin-bottom:30px;
+}
+.follow-cen{
+    margin-left:15px;
+    margin-right:15px;
+}
+.follow-right{
+    margin-left:15px;
+}
+.follow-left{
+    margin-right:15px;
+}
+.follow-left .line{
+    margin-bottom:30px;
+    margin-top:5px;
+}

@@ -1,0 +1,49 @@
+/*NAV-BLOG*/
+.nav-blog{
+    margin-right:30px;
+}
+.nav-blog li{
+    margin-bottom:30px;
+}
+.nav-blog li a:hover{
+    margin-bottom:30px;
+    color:#333;
+}
+.nav-blog li a{
+    color:#ccc;
+}
+li.first a{
+    color:#333;
+}
+
+
+/*BLOG CART*/
+.blog-cart{
+    margin-top:80px;
+}
+p.sort{
+    text-align:right;
+    margin-bottom:30px;
+}
+.time{
+    color:#999;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+.blog-row2{
+    margin-top:80px;
+    margin-bottom:80px;
+}
+.blog-row3{
+    margin-bottom:80px;
+}
+.ar-cen{
+    margin-left:15px;
+    margin-right:15px;
+}
+.ar-left{
+    margin-right:15px;
+}
+.ar-right{
+    margin-left:15px;
+}

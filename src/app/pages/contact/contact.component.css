@@ -1,0 +1,31 @@
+.title-qa{
+    text-align:center;
+}
+.title-qa h5{
+    margin-top:10px;
+
+}
+/*FIND QUESTION*/
+.fqa{
+    margin-top:60px;
+    margin-bottom:80px;
+}
+.fqa ul{
+    display:flex;
+    justify-content:center;
+}
+.fqa ul li{
+    margin:15px;
+}
+.fqa ul li a{
+    padding:15px 50px;
+    display:inline-block;
+    background-color:#BDC7C9;
+    border-radius: 5px;
+}
+.fqa ul li a:hover{
+    color:#333;
+    background-color:#FFA99650;
+}
+/*CONTACT AND ASK A QUESTION*/
+
