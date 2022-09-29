@@ -11,7 +11,14 @@
       <img src="assets/img/logo.png"/>
     </div>
     <div class="top-page-right">
-      <a routerLink="/search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+      <div class="search-container">
+        <form>
+          <input type="text" placeholder="Search" name="search">
+          <button type="submit">
+            <a routerLink="/search"><i class="fa fa-search fa-xl"></i></a>
+          </button>
+        </form>
+      </div>
     </div>
   </div>
   <div class="line"></div>
@@ -28,20 +35,20 @@
             RECIPE LIST <i class="fa-solid fa-caret-down"></i>
           </a>
           <div class="dropdown-content">
-            <a routerLink="/recipe-list/#">CAKE & OCCASIONS</a>
-            <a routerLink="/recipe-list/#">DESSERT & VEGAN</a>
-            <a routerLink="/recipe-list/#">CAKE & SEASONS</a>
-            <a routerLink="/recipe-list/#">CUPCAKE</a>
+            <a routerLink="/list-occasion">CAKE & OCCASIONS</a>
+            <a routerLink="/list-dessert">DESSERT & VEGAN</a>
+            <a routerLink="/list-season">CAKE & SEASONS</a>
+            <a routerLink="/list-cupcake">CUPCAKE</a>
           </div>
         </li>
         <li class="med dropdown">
           <a routerLink="/blog" class="dropbtn">
             BLOG <i class="fa-solid fa-caret-down"></i></a>
           <div class="dropdown-content">
-            <a routerLink="/blog/#">LIFESTYLE</a>
-            <a routerLink="/blog/#">BAKING TIPS</a>
-            <a routerLink="/blog/#">CAKE DIARY</a>
-            <a routerLink="/blog/#">INSPIRATION</a>
+            <a routerLink="/blog-lifestyle">LIFESTYLE</a>
+            <a routerLink="/blog-tip">BAKING TIPS</a>
+            <a routerLink="/blog-diary">CAKE DIARY</a>
+            <a routerLink="/blog-inspiration">INSPIRATION</a>
           </div>
         </li>
         <li class="med"><a routerLink="/contact-us">CONTACT US</a></li>
@@ -69,15 +76,14 @@
           <li><a routerLink="/about-us">About us</a></li>
           <li><a routerLink="/recipe-list">Recipe list</a></li>
           <li><a routerLink="/blog">Blog</a></li>
-          <li><a routerLink="/contact-us">Contact us</a></li>
         </ul>
       </div>
       <div class="help col-2">
         <div class="help-top">
           <p class="med">Need help?</p>
           <ul>
+            <li><a routerLink="/contact-us">Contact us</a></li>
             <li><a routerLink="/contact-us">Q&A</a></li>
-            <li><a routerLink="/contact-us">FQAs</a></li>
           </ul>
         </div>
         <div class="help-bottom">
@@ -91,8 +97,8 @@
       </div>
       <div class="newsletter col-4">
         <p class="med">Sign up for newsletter</p>
-        <form name="myFormBottom" action="#" onsubmit="return validateFormBottom()" method="post">
-          <input type="email" name="emailBottom" placeholder="Email address">
+        <form onsubmit="alert('Thank you for signing up!\nWe will send you email about our updates.')">
+          <input type="email" name="emailBottom" placeholder="Email address" required>
           <button type="submit" class="btn btn-sm btn-sc">Submit</button>
         </form>
       </div>

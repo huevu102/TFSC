@@ -1,31 +1,76 @@
+/*SHOWCASE*/
+/*CONTACT*/
+.contact{
+  background-color: #FFEEEA;
+}
+.contact form {
+  font-family: Overlock;
+  font-size: 16px;
+}
+.contact h3{
+  padding-top:70px;
+  text-align:center;
+}
+.contact-inner{
+  padding-top:40px;
+}
+.contact-inner p.pri{
+  margin-bottom:10px;
+}
+.contact-content{
+  margin-bottom:200px;
+}
+/*FOLLOW US*/
+.follow-us{
+  margin-top:100px;
+  margin-bottom:120px;
+}
+.img-cen{
+  margin-left:5px;
+  margin-right:5px;
+}
+.img-left{
+  margin-right:5px;
+}
+.img-right{
+  margin-left:5px;
+}
+.follow-content .fl-ct{
+  margin-top:5px;
+  margin-bottom:20px;
+}
+
+/*Q&A*/
+.banner {
+  margin-top: 100px;
+}
 .title-qa{
-    text-align:center;
+  text-align:center;
 }
 .title-qa h5{
-    margin-top:10px;
+  margin-top:10px;
+  margin-bottom:40px;
 
 }
 /*FIND QUESTION*/
 .fqa{
-    margin-top:60px;
-    margin-bottom:80px;
+  margin-top:60px;
+  margin-bottom:80px;
 }
 .fqa ul{
-    display:flex;
-    justify-content:center;
+  display:flex;
+  justify-content:center;
 }
 .fqa ul li{
-    margin:15px;
+  margin:15px;
 }
 .fqa ul li a{
-    padding:15px 50px;
-    display:inline-block;
-    background-color:#BDC7C9;
-    border-radius: 5px;
+  padding:15px 50px;
+  display:inline-block;
+  background-color:#BDC7C9;
+  border-radius: 5px;
 }
 .fqa ul li a:hover{
-    color:#333;
-    background-color:#FFA99650;
+  color:#333;
+  background-color:#FFA99650;
 }
-/*CONTACT AND ASK A QUESTION*/
-

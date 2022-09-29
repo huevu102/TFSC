@@ -1,41 +1,36 @@
-<div class="showcase">
-    <div class="container row">
-        <div class="col-4"></div>
-        <div class="col-10 row">
-            <div class="w-4">
-                <img src="assets/img/showcase2.jpg"/>
-            </div>
-            <div class="w-6">
-                <a routerLink="/blog">
-                    <h3 class="pri">Make A Cake</h3>
-                </a>
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-8 show-content">
-                        <h3>To Combat Boredom!</h3>
-                        <p>We know that you all are having some hard times because of lockdowns and self-quarantine.
-                            Therefore, The Five-Season Cake blog offers a place to share our stories, tips...
-                            which we believe that in some way could warm up your heart.</p>
-                    </div>
-                    <div class="col-2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-4 show-img1">
-                        <a routerLink="/blog"><img src="assets/img/show1.jpg"/></a>
-                    </div>
-                    <div class="col-4 show-img2">
-                        <a routerLink="/blog"><img src="assets/img/show2.jpg"/></a>
-                    </div>
-                    <div class="col-2">
-                        <a routerLink="/blog"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--SHOWCASE-->
+<div class="showcase row">
+  <div class="col-6 showcase-left row">
+    <div class="col-2"></div>
+    <div class="col-8 show-img">
+      <!--<img src="assets/img/showcase2.jpg"/>-->
     </div>
+    <div class="col-2"></div>
+  </div>
+  <div class="col-6 showcase-right">
+    <div class="showcase-title">
+      <h4 class="pri">Making A Cake</h4>
+    </div>
+    <div class="showcase-content row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h3>To Combat Boredom!</h3>
+        <p>Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat
+          quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed
+          est sit in tortor.</p>
+        <div class="row ">
+          <div class="col-6 show-img-sm1">
+            <img src="assets/img/show1.jpg"/>
+          </div>
+          <div class="col-6 show-img-sm2">
+            <img src="assets/img/show2.jpg"/>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
 </div>
-<!--TEST-->
 
 <!--TOP TRENDING-->
 <div class="top-trend container row">
@@ -78,6 +73,7 @@
         </div>
     </div>
 </div>
+
 <!--RECENTLY UPDATE-->
 <div class="container recently-update">
     <div class="title row">
@@ -89,135 +85,141 @@
         </div>
         <div class="col-2"></div>
     </div>
-    <div class="owl-carousel owl-theme update">
-        <div class="cart-cake item">
+    <div class="update">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <div class="cart-cake item">
             <a routerLink="/detail">
-                <img src="assets/img/update1.jpg" alt="croissant" />
-            </a>
-            <a routerLink="/detail">
-                <p class="med">CROISSANT</p>
+              <img src="assets/img/update1.jpg" alt="croissant" />
+              <p class="med">CROISSANT</p>
             </a>
             <span>A croissant is a buttery, flaky, French viennoiserie pastry inspired by the shape of
-                        the Austrian kipferl but using the French yeast-leavened laminated dough.</span>
-        </div>
-        <div class="cart-cake item">
+        the Austrian kipferl but using the French yeast-leavened laminated dough.</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="cart-cake item">
             <a routerLink="/detail">
-                <img src="assets/img/update2.jpg" alt="donut" />
-            </a>
-            <a routerLink="/detail">
-                <p class="med">DONUT</p>
+              <img src="assets/img/update2.jpg" alt="donut" />
+              <p class="med">DONUT</p>
             </a>
             <span>A doughnut or donut is a type of food made from leavened fried dough. It is prepared
-                        in various forms as a sweet snack that can be homemade or purchased in bakeries, supermarkets,
-                        food stalls, etc.</span>
-        </div>
-        <div class="cart-cake item">
+        in various forms as a sweet snack that can be homemade or purchased in bakeries, supermarkets,
+        food stalls, etc.</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="cart-cake item">
             <a routerLink="/detail">
-                <img src="assets/img/update3.jpg" alt="chocolate" />
-            </a>
-            <a routerLink="/detail">
-                <p class="med">CHOCOLATE</p>
+              <img src="assets/img/update3.jpg" alt="chocolate" />
+              <p class="med">CHOCOLATE</p>
             </a>
             <span>Chocolate is a food made from roasted and ground cacao seed kernels that is available
-                        as a liquid, solid, or paste, either on its own or as a flavoring agent in other foods.</span>
-        </div>
-        <div class="cart-cake item">
+        as a liquid, solid, or paste, either on its own or as a flavoring agent in other foods.</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="cart-cake item">
             <a routerLink="/detail">
-                <img src="assets/img/update4.jpg" />
-                <p class="med">COOKIE</p>
-                <span>A cookie is a baked or cooked snack or dessert that is typically small, flat and sweet.
-                        It usually contains flour, sugar, egg, and some type of oil, fat, butter. It may include
-                        other ingredients such as raisins, oats, nuts, etc.</span>
-            </a></div>
-        <div class="cart-cake item">
-            <a routerLink="/detail">
-                <img src="assets/img/update5.jpg" />
+              <img src="assets/img/update4.jpg" />
+              <p class="med">COOKIE</p>
             </a>
+            <span>A cookie is a baked or cooked snack or dessert that is typically small, flat and sweet.
+        It usually contains flour, sugar, egg, and some type of oil, fat, butter. It may include
+        other ingredients such as raisins, oats, nuts, etc.</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="cart-cake item">
             <a routerLink="/detail">
-                <p class="med">CHEESE PLATTER</p>
+              <img src="assets/img/update5.jpg" />
+              <p class="med">CHEESE PLATTER</p>
             </a>
             <span>Cheese is a dairy product produced in wide ranges of flavors, textures, and forms by
-                        coagulation of the milk protein casein. It comprises proteins and fat from milk,
-                        usually the milk of cows, buffalo, goats, or sheep.</span>
-        </div>
-        <div class="cart-cake item">
+        coagulation of the milk protein casein. It comprises proteins and fat from milk,
+        usually the milk of cows, buffalo, goats, or sheep.</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="cart-cake item">
             <a routerLink="/detail">
-                <img src="assets/img/update6.jpg" />
-            </a>
-            <a routerLink="/detail">
-                <p class="med">CHEESE CAKE</p>
+              <img src="assets/img/update6.jpg" />
+              <p class="med">CHEESE CAKE</p>
             </a>
             <span>Cheesecake is a sweet dessert consisting of one or more layers. The main, and thickest,
-                        layer consists of a mixture of a soft, fresh cheese (typically cottage cheese, cream cheese
-                        or ricotta), eggs, and sugar.</span>
-        </div>
-        <div class="cart-cake item">
+        layer consists of a mixture of a soft, fresh cheese (typically cottage cheese, cream cheese
+        or ricotta), eggs, and sugar.</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="cart-cake item">
             <a routerLink="/detail">
-                <img src="assets/img/update7.jpg" />
-            </a>
-            <a routerLink="/detail">
-                <p class="med">PEACH CAKE</p>
+              <img src="assets/img/update7.jpg" />
+              <p class="med">PEACH CAKE</p>
             </a>
             <span>Filled with fresh, ripe peaches, this Peach Cake recipe is the perfect summer treat.
-                        The cake is soft, light, and moist, and each bite is bursting with flavor from the sweet,
-                        juicy peaches.</span>
-        </div>
-        <div class="cart-cake item">
+        The cake is soft, light, and moist, and each bite is bursting with flavor from the sweet,
+        juicy peaches.</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="cart-cake item">
             <a routerLink="/detail">
-                <img src="assets/img/update8.jpg" />
-            </a>
-            <a routerLink="/detail">
-                <p class="med">SPONGE CAKE</p>
+              <img src="assets/img/update8.jpg" />
+              <p class="med">SPONGE CAKE</p>
             </a>
             <span>Sponge cake is a light cake made with egg whites, flour and sugar, sometimes leavened
-                            with baking powder. Sponge cakes, leavened with beaten eggs, originated during the Renaissance,
-                            possibly in Spain.</span>
-        </div>
-        <div class="cart-cake item">
+        with baking powder. Sponge cakes, leavened with beaten eggs, originated during the Renaissance,
+        possibly in Spain.</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="cart-cake item">
             <a routerLink="/detail">
-                <img src="assets/img/update9.jpg" />
-            </a>
-            <a routerLink="/detail">
-                <p class="med">CHOCOLATE CAKE</p>
+              <img src="assets/img/update9.jpg" />
+              <p class="med">CHOCOLATE CAKE</p>
             </a>
             <span>Chocolate cake or chocolate gâteau is a cake flavored with melted chocolate, cocoa powder,
-                            or both. It can also include other ingredients. These include fudge, vanilla creme,
-                            and other sweeteners.</span>
-        </div>
-        <div class="item">
+        or both. It can also include other ingredients. These include fudge, vanilla creme,
+        and other sweeteners.</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="item">
             <a routerLink="/detail">
-                <img src="assets/img/update10.jpg" />
-            </a>
-            <a routerLink="/detail">
-                <p class="med">SANDWICH</p>
+              <img src="assets/img/update10.jpg" />
+              <p class="med">SANDWICH</p>
             </a>
             <span>A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on
-                        or between slices of bread, or more generally any dish wherein bread serves as a container
-                        or wrapper for another food type.</span>
-        </div>
-        <div class="item">
+        or between slices of bread, or more generally any dish wherein bread serves as a container
+        or wrapper for another food type.</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="item">
             <a routerLink="/detail">
-                <img src="assets/img/update11.jpg" />
-            </a>
-            <a routerLink="/detail">
-                <p class="med">BRIOCHE</p>
+              <img src="assets/img/update11.jpg" />
+              <p class="med">BRIOCHE</p>
             </a>
             <span>Brioche is a bread of French origin whose high egg and butter content gives it a rich
-                        and tender crumb. It was described as "light and slightly puffy, more or less fine,
-                        according to the proportion of butter and eggs".</span>
-        </div>
-        <div class="item">
+        and tender crumb. It was described as "light and slightly puffy, more or less fine,
+        according to the proportion of butter and eggs".</span>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="item">
             <a routerLink="/detail">
-                <img src="assets/img/update12.jpg" />
-            </a>
-            <a routerLink="/detail">
-                <p class="med">PANNA COTTA</p>
+              <img src="assets/img/update12.jpg" />
+              <p class="med">PANNA COTTA</p>
             </a>
             <span>Panna cotta (Italian for "cooked cream") is an Italian dessert of sweetened cream thickened
-                        with gelatin and molded. The cream may be aromatized with coffee, vanilla, or other flavorings.</span>
-        </div>
+        with gelatin and molded. The cream may be aromatized with coffee, vanilla, or other flavorings.</span>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
     </div>
 </div>
+
 <!--SPECIAL CAKE-->
 <div class="special-cake">
     <div class="container row">
@@ -238,6 +240,7 @@
         </div>
     </div>
 </div>
+
 <!--FOR THIS SEASON-->
 <div class="container for-season">
     <div class="title row">
@@ -299,21 +302,23 @@
     </div>
 
 </div>
+
 <!--SIGN UP FOR EMAIL-->
 <div class="container signup row">
     <div class="col-7">
-        <a href="#"><img src="assets/img/signup.jpg"/></a>
+        <img src="assets/img/signup.jpg"/>
     </div>
     <div class="col-5">
         <h5>Sign Up For Email</h5>
         <p>Enter your email address to receive new posts in your inbox, as well as seasonal newsletters with
             extra goodies!</p>
-        <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
-            <input type="email" name="email" placeholder="Email address">
+        <form name="myForm">
+            <input type="email" name="email" placeholder="Email address" required>
             <button type="submit" class="btn btn-lg btn-sc">Sign up</button>
         </form>
     </div>
 </div>
+
 <!--FOLLOW-->
 <div class="follow">
     <div class="container row">
@@ -321,22 +326,22 @@
             <h5><a href="http://www.instagram.com/thefiveseasoncake">Follow Us On Instagram!</a></h5>
             <div class="line"></div>
             <div class="list-box">
-                <a href="#"><img src="assets/img/follow1.jpg"/></a>
+                <a href="http://www.instagram.com/thefiveseasoncake"><img src="assets/img/follow1.jpg"/></a>
             </div>
         </div>
         <div class="col-3 follow-cen">
             <div class="follow2 list-box">
-                <a href="#"><img src="assets/img/follow2.jpg"/></a>
+                <a href="http://www.instagram.com/thefiveseasoncake"><img src="assets/img/follow2.jpg"/></a>
             </div>
             <div class="list-box">
-                <a href="#"><img src="assets/img/follow3.jpg"/></a>
+                <a href="http://www.instagram.com/thefiveseasoncake"><img src="assets/img/follow3.jpg"/></a>
             </div>
         </div>
         <div class="list-box col-3 follow-cen">
-            <a href="#"><img src="assets/img/follow4.jpg"/></a>
+            <a href="http://www.instagram.com/thefiveseasoncake"><img src="assets/img/follow4.jpg"/></a>
         </div>
         <div class="list-box col-3 follow-right">
-            <a href="#"><img src="assets/img/follow5.jpg"/></a>
+            <a href="http://www.instagram.com/thefiveseasoncake"><img src="assets/img/follow5.jpg"/></a>
         </div>
     </div>
 </div>

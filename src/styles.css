@@ -70,7 +70,9 @@ a{
 a:hover {
   color: #999999;
 }
-
+li.first a{
+  color:#333;
+}
 
 .flex{
   display:flex;
@@ -104,6 +106,9 @@ a:hover {
 }
 .col-9{
   width:75%;
+}
+.col-10{
+  width:83.3%;
 }
 .line{
   background-color:#FFA996;
@@ -220,7 +225,7 @@ button:hover {
   background-color:#fff;
 }
 .top-page-left ul li{
-  margin-top:28px;
+  margin-top:23px;
 }
 .tpl2{
   margin-left:20px;
@@ -232,7 +237,10 @@ button:hover {
   margin:0px auto;
 }
 .top-page-right{
-  margin-top:28px;
+  margin-top:23px;
+}
+.search-container button{
+  height:24px;
 }
 
 /*DROPDOWN*/
@@ -257,7 +265,6 @@ button:hover {
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
 
 /*header*/
@@ -279,10 +286,10 @@ button:hover {
   margin-right:0px;
 }
 .menu ul li a{
-  color:#ccc;
+  color:#333;
 }
 .menu ul li a:hover{
-  color:#333;
+  color:#ccc;
 }
 
 /*RECIPE CART*/
@@ -379,32 +386,10 @@ button:hover {
   color:#fff;
 }
 
-/*contact*/
-.input-form{
-  margin-right:30px;
-}
-.input-form input{
-  margin-bottom:40px;
-}
-.contact-inner{
-  padding: 120px 130px 120px 130px;
-  background-color:#FFEEEA;
-  margin-top:140px;
-  margin-bottom:140px;
-}
-.input-content h5{
-  margin-top:5px;
-  margin-bottom:20px;
-}
-.contact-content{
-  margin-bottom:110px;
-}
-.contact-inner .input-form .btn-center{
-  margin-top:60px;
-}
+
 /*SEARCH BAR*/
 .search-sec{
-  margin-top:60px;
+  margin-top:30px;
   margin-bottom:60px;
 }
 .search{
@@ -445,6 +430,64 @@ button:hover {
 .ques h6{
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/*PATH*/
+.recipe-path li{
+  margin-right:20px;
+}
+.recipe-path li:last-child{
+  margin-right:0px;
+}
+/*contact*/
+.input-form{
+  margin-right:30px;
+}
+.input-form input{
+  margin-bottom:40px;
+}
+.contact-inner{
+  padding: 100px 130px 100px 130px;
+  background-color:#FFEEEA;
+
+}
+.input-content h5{
+  margin-top:5px;
+  margin-bottom:20px;
+}
+.contact-content{
+  margin-bottom:110px;
+}
+.contact-inner .input-form .btn-center{
+  margin-top:60px;
+}
+
+
+
+/*SEARCH BOX*/
+.search-container input[type=text] {
+  width: 80%;
+  border-bottom:1px solid #cccccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  background:none;
+  font-size: 16px;
+  font-family: Overlock;
+}
+.search-container button {
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  float: right;
+  font-size: 14px;
+}
+/*LOGO*/
+.logo{
+  width:300px;
 }
 
 /*COLLAPSE CONTENT AND SOME Q&A*/

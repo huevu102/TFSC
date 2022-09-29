@@ -1,54 +1,87 @@
 /*Recipe list*/
 .recipe-list{
-    margin-top:30px;
+  margin-top:30px;
 }
 .recipe-list-cart{
-    margin-top:120px;
-    margin-bottom:170px;
+  margin-top:120px;
+  margin-bottom:170px;
 }
+h4{
+  margin-bottom:30px;
+}
+/*RECENTLY UPDATE*/
+.top-results{
+  margin-top:80px;
+}
+/*FOUR RECIPE BOX*/
 .list-box{
-    position:relative;
+  position:relative;
 }
 .list-box.col-3{
-    margin-left:15px;
-    margin-right:15px;
+  margin-left:15px;
+  margin-right:15px;
 }
 .list-box.col-5{
-    margin-right:15px;
+  margin-right:15px;
 }
 .two-box{
-    margin-left:15px;
+  margin-left:15px;
 }
 .box-top{
-    margin-bottom:30px;
+  margin-bottom:30px;
 }
 .list-name{
-    position:absolute;
-    left:20px;
-    bottom:20px;
+  position:absolute;
+  left:20px;
+  bottom:20px;
 }
 .list-name h5{
-    color:#fff;
+  color:#fff;
 }
 .list-box{
-    box-shadow:0px 4px 6px 0px rgba(0,0,0,0.3);
+  box-shadow:0px 4px 6px 0px rgba(0,0,0,0.3);
 }
 .first-box{
-    height:100%;
+  height:100%;
 }
 .btn-center{
-    margin-top:80px;
+  margin-top:80px;
 }
 
 /*RECIPE CART*/
 .top-line{
-    width:490px;
-    margin-left:auto;
-    margin-right:auto;
+  width:490px;
+  margin-left:auto;
+  margin-right:auto;
 }
 p.recap{
-    margin-top:20px;
-    margin-bottom:40px;
-    text-align:center;
+  margin-top:20px;
+  margin-bottom:40px;
+  text-align:center;
+}
+.recipe-list-cart{
+  margin-top:80px;
 }
 
+/*small-recipe*/
+
+.recipe-list-detail{
+  margin-top:40px;
+  margin-bottom:170px;
+}
+/*TITLE*/
+.title-cake{
+  text-align: center;
+  margin-bottom:60px;
+}
+.title-cake .line{
+  width: 490px;
+  margin: 10px auto 20px auto;
+}
+.title-cake h4{
+  margin-top:40px;
+}
+/*CAKE-CARD*/
+.btn-center{
+  margin-top:60px;
+}

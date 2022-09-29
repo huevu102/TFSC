@@ -1,37 +1,36 @@
-
 /*Showcase*/
-.showcase{
-    background-image: url("../../../assets/img/showcase.jpg");
-    background-size: cover;
+.showcase-left{
+  background-image: url("../../../assets/img/showcase.jpg");
+  background-size: cover;
 }
-.showcase .col-10{
-    padding-top:95px;
-    padding-bottom:95px;
+.show-img{
+  margin-top:60px;
+  margin-bottom:60px;
 }
-.w-4{
-    width:40%;
+.showcase-right{
+  background-color: #FFEEEA90;
 }
-.w-6{
-    width:60%;
+.showcase-title{
+  margin-top:75px;
 }
-.w-6 h3.pri{
-    margin-top:50px;
-    margin-left:30px;
+.showcase-content{
+  margin-bottom:75px;
 }
-.show-img1{
-    margin-right:15px;
+.showcase-content h3{
+  margin-top:5px;
 }
-.show-img2{
-    margin-left:15px;
+.showcase-content .col-8 p{
+  margin-top:10px;
+  margin-bottom:40px;
 }
-.show-content{
-    margin-top:5px;
+.showcase-right h4{
+  margin-left:30px;
 }
-.show-content h3{
-    margin-bottom:20px;
+.show-img-sm1{
+  margin-right:15px;
 }
-.show-content p {
-    margin-bottom:70px;
+.show-img-sm2{
+  margin-left:15px;
 }
 
 /*TOP TREND*/
@@ -91,6 +90,9 @@
 .title .line{
     width:530px;
     margin: 10px auto 20px auto;
+}
+.item {
+  padding: 10px;
 }
 
 /*SPECIAL CAKE*/
