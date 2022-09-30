@@ -53,6 +53,7 @@
         <p>While the chocolate harvest cake has layers of chocolate cake and pumpkin mousse filling and is
           incredibly delicious but it is really only something I will make in the fall. So I took
           the idea of that cake and made a raspberry filling instead, delicious!</p>
+
         <img src="assets/img/recipe1.jpg"/>
         <p class="med">HOW TO MAKE THE PERFECT CHOCOLATE CAKE:</p>
         <ul>
@@ -270,7 +271,7 @@
               <p class="sma">19/8/2022 at 14:30pm</p>
             </div>
             <div class="reply">
-              <a><p class="rep pri">Repply</p></a>
+              <a href="#"><p class="rep pri">Repply</p></a>
             </div>
           </div>
           <p class="cmt">Thank you so much for the amazing cake my son loved it. It was perfect and tasted
@@ -300,7 +301,7 @@
       <div class="leave-cmt">
         <h5 class="pri">LEAVE A COMMENTS</h5>
         <p>Your email address will not be published. Required fields are marked *</p>
-        <form>
+        <form onsubmit="return validateForm()">
           <input type="text" placeholder="Name (*)" required><br>
           <input type="email" placeholder="Email address (*)" required><br>
           <input type="text" placeholder="Subject"><br>
@@ -314,6 +315,50 @@
             <button type="submit" class="btn btn-lg btn-pr">Post Comment</button>
           </div>
         </form>
+      </div>
+      <!--SUGGEST RECIPE-->
+      <div class="suggest">
+        <h5 class="pri">MAY YOU LIKE IT</h5>
+        <div class="list-cart row">
+          <div class="col-6 cart-left">
+            <div class="cart-cake cart-lg-6"><a routerLink="/detail">
+              <img src="assets/img/recipe-sg1.jpg"/>
+              <p class="sma">Dessert&Vegan</p>
+              <p class="med">SPONGE CAKE</p>
+              <p>Sponge cake is a light cake made with egg whites, flour and sugar, sometimes leavened
+                with baking powder. Sponge cakes, leavened with beaten eggs, originated during the Renaissance,
+                possibly in Spain.</p>
+            </a></div>
+            <div class="cart-line line"></div>
+            <div class="cart-cake cart-lg-8"><a routerLink="/detail">
+              <img src="assets/img/recipe-sg3.jpg"/>
+              <p class="sma">Dessert&Vegan</p>
+              <p class="med">PANNA COTTA</p>
+              <p>Panna cotta is an Italian dessert of sweetened cream thickened with gelatin and molded.
+                The cream may be aromatized with coffee, vanilla, etc.</p>
+            </a></div>
+          </div>
+          <div class="col-6 cart-center">
+            <div class="cart-cake cart-lg-7"><a routerLink="/detail">
+              <img src="assets/img/recipe-sg2.jpg"/>
+              <p class="sma">No-bake Cake</p>
+              <p class="med">Nutella Cookie Cough Cheesecake</p>
+              <p>This cheesecake has all the best things. Crunchy cookie crust and delicious chocolate chip
+                cookie dough with light and fluffy nutella cheesecake filling.</p>
+            </a></div>
+            <div class="cart-line line"></div>
+            <div class="cart-cake cart-lg-7"><a routerLink="/detail">
+              <img src="assets/img/recipe-sg4.jpg"/>
+              <p class="sma">Dessert&Vegan</p>
+              <p class="med">DONUT</p>
+              <p>A doughnut or donut is a type of food made from leavened fried dough. It is prepared
+                in various forms as a sweet snack that can be homemade or purchased.</p>
+            </a></div>
+          </div>
+        </div>
+        <div class="btn-center">
+          <button type="submit" class="btn btn-lg btn-pr">See More</button>
+        </div>
       </div>
     </div>
     <div class="col"></div>
@@ -329,41 +374,55 @@
       <div class="similar">
         <h6>Similar Recipes</h6>
         <div class="cart-cake simi-cart row">
-          <div class="col-4 simi-img"><a routerLink="/detail">
-            <img src="assets/img/simi1.jpg"/>
-          </a></div>
-          <div class="col-8 simi-content"><a routerLink="/detail">
-            <p class="med">Blueberry Cream Cake</p>
+          <div class="col-4 simi-img">
+            <a routerLink="/detail">
+              <img src="assets/img/simi1.jpg"/>
+            </a>
+          </div>
+          <div class="col-8 simi-content">
+            <a routerLink="/detail">
+              <p class="med">Blueberry Cream Cake</p>
+            </a>
             <p class="sma">Wed 19/09/2022</p>
-          </a></div>
+          </div>
         </div>
         <div class="line"></div>
         <div class="cart-cake simi-cart row">
-          <div class="col-4 simi-img"><a routerLink="/detail">
-            <img src="assets/img/simi2.jpg"/>
-          </a></div>
-          <div class="col-8 simi-content"><a routerLink="/detail">
-            <p class="med">Mini Cheese Cake</p>
+          <div class="col-4 simi-img">
+            <a routerLink="/detail">
+              <img src="assets/img/simi2.jpg"/>
+            </a>
+          </div>
+          <div class="col-8 simi-content">
+            <a routerLink="/detail">
+              <p class="med">Mini Cheese Cake</p>
+            </a>
             <p class="sma">Wed 27/08/2022</p>
-          </a></div>
+          </div>
+        </div>
         <div class="line"></div>
         <div class="cart-cake simi-cart row">
-          <div class="col-4 simi-img"><a routerLink="/detail">
-            <img src="assets/img/simi3.jpg"/>
-          </a></div>
-          <div class="col-8 simi-content"><a routerLink="/detail">
-            <p class="med">No-bake Pecan Pie</p>
+          <div class="col-4 simi-img">
+            <a routerLink="/detail">
+              <img src="assets/img/simi3.jpg"/>
+            </a>
+          </div>
+          <div class="col-8 simi-content">
+            <a routerLink="/detail">
+              <p class="med">No-bake Pecan Pie</p>
+            </a>
             <p class="sma">Wed 1/06/2022</p>
-          </a></div>
+          </div>
+        </div>
       </div>
       <!--signup for newsletter-->
       <div class="signup">
         <h6>Sign Up For Email</h6>
         <p class="sma">Enter your email address to receive new posts in inbox and seasonal newsletters with
           extra goodies!</p>
-        <form>
-          <input type="email" name="email" placeholder="Email address" required>
-          <button type="submit" class="btn btn-sm btn-pr" onclick="alert('Thank you for signing up!\nWe will send you email about our updates.')">Submit</button>
+        <form name="myForm" onsubmit="return validateForm()" >
+          <input type="email" name="email" placeholder="Email address">
+          <button type="submit" class="btn btn-sm btn-pr">Submit</button>
         </form>
       </div>
       <div class="special-cake">
@@ -413,56 +472,5 @@
         </div>
       </div>
     </div>
-  </div>
-  <!--SUGGEST RECIPE-->
-  <div class="suggest">
-    <h5 class="pri">MAY YOU LIKE IT</h5>
-    <div class="list-cart row">
-      <div class="col-4 cart-left">
-        <div class="cart-cake cart-lg-6"><a routerLink="/detail">
-          <img src="assets/img/recipe-sg1.jpg"/>
-          <p class="sma">Dessert&Vegan</p>
-          <p class="med">SPONGE CAKE</p>
-          <p>Sponge cake is a light cake made with egg whites, flour and sugar, sometimes leavened
-            with baking powder. Sponge cakes, leavened with beaten eggs, originated during the Renaissance,
-            possibly in Spain.</p>
-        </a></div>
-        <div class="cart-line line"></div>
-        <div class="cart-cake cart-lg-8"><a routerLink="/detail">
-          <img src="assets/img/recipe-sg3.jpg"/>
-          <p class="sma">Dessert&Vegan</p>
-          <p class="med">PANNA COTTA</p>
-          <p>Panna cotta is an Italian dessert of sweetened cream thickened with gelatin and molded.
-            The cream may be aromatized with coffee, vanilla, etc.</p>
-        </a></div>
-      </div>
-      <div class="col-4 cart-center">
-        <div class="cart-cake cart-lg-7"><a routerLink="/detail">
-          <img src="assets/img/recipe-sg2.jpg"/>
-          <p class="sma">No-bake Cake</p>
-          <p class="med">Nutella Cookie Cough Cheesecake</p>
-          <p>This cheesecake has all the best things. Crunchy cookie crust and delicious chocolate chip
-            cookie dough with light and fluffy nutella cheesecake filling.</p>
-        </a></div>
-        <div class="cart-line line"></div>
-        <div class="cart-cake cart-lg-7"><a routerLink="/detail">
-          <img src="assets/img/recipe-sg4.jpg"/>
-          <p class="sma">Dessert&Vegan</p>
-          <p class="med">DONUT</p>
-          <p>A doughnut or donut is a type of food made from leavened fried dough. It is prepared
-            in various forms as a sweet snack that can be homemade or purchased.</p>
-        </a></div>
-      </div>
-      <div class="col-4 cart-right"></div>
-    </div>
-    <div class="row">
-      <div class="btn-center col-8">
-        <button type="submit" class="btn btn-lg btn-pr" onclick="alert('Loading...')">See More</button>
-      </div>
-      <div class="col"></div>
-      <div class="col-3"></div>
-    </div>
-  </div>
-  </div>
   </div>
 </div>
