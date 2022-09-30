@@ -301,7 +301,7 @@
       <div class="leave-cmt">
         <h5 class="pri">LEAVE A COMMENTS</h5>
         <p>Your email address will not be published. Required fields are marked *</p>
-        <form onsubmit="return validateForm()">
+        <form onsubmit="alert('You have successfully posted a comment.')">
           <input type="text" placeholder="Name (*)" required><br>
           <input type="email" placeholder="Email address (*)" required><br>
           <input type="text" placeholder="Subject"><br>
@@ -357,7 +357,7 @@
           </div>
         </div>
         <div class="btn-center">
-          <button type="submit" class="btn btn-lg btn-pr">See More</button>
+          <button type="submit" class="btn btn-lg btn-pr" onclick="alert('Loading...')">See More</button>
         </div>
       </div>
     </div>
@@ -420,8 +420,8 @@
         <h6>Sign Up For Email</h6>
         <p class="sma">Enter your email address to receive new posts in inbox and seasonal newsletters with
           extra goodies!</p>
-        <form name="myForm" onsubmit="return validateForm()" >
-          <input type="email" name="email" placeholder="Email address">
+        <form onsubmit="alert('Thank you for signing up!\nWe will send you email about our updates.')">
+          <input type="email" name="email" placeholder="Email address" required>
           <button type="submit" class="btn btn-sm btn-pr">Submit</button>
         </form>
       </div>
